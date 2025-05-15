@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कालचक्र: ब्रह्मांडाच्या वेळेचे रहस्य</title>
+    <link rel="stylesheet" href="style.css"> <!-- Updated path -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <p id="loader-text">लोड होत आहे...</p>
+    </div>
+
+    <header>
+        <div class="logo" id="logo_text">कालचक्र</div>
+        <nav class="language-switcher">
+            <button data-lang="mr" class="active">मराठी</button>
+            <button data-lang="hi">हिन्दी</button>
+            <button data-lang="en">English</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section" class="content-section full-vh">
+            <div id="hero-threejs-canvas-container">
+                <!-- Hero Three.js canvas will be appended here -->
+            </div>
+            <div class="hero-content">
+                <h1 id="intro-title" class="reveal-text">ब्रह्मांडाच्या वेळेचे रहस्य</h1>
+                <p id="intro-paragraph" class="reveal-text" data-delay="0.2">
+                    हिंदू धर्मग्रंथांनुसार विश्वाच्या निर्मितीपासून ते प्रलयापर्यंतच्या अफाट कालगणनेचा अनुभव घ्या.
+                </p>
+                <button id="start-journey-btn" class="reveal-text" data-delay="0.4">प्रवासाला सुरुवात करा</button>
+            </div>
+        </section>
+
+        <div id="visual-journey-container" style="display: none;">
+            <!-- Timeline sections will be appended here by JS -->
+        </div>
+    </main>
+
+    <div class="navigation-dots" style="display: none;">
+        <!-- Nav dots will be appended here by JS -->
+    </div>
+
+    <footer>
+        <p id="footer-text">© २०२५ कालचक्र प्रकल्प. सर्व हक्क राखीव. माहिती स्त्रोत: वैदिक आणि पौराणिक ग्रंथ.</p>
+    </footer>
+
+    <!-- GSAP and ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Note: OrbitControls are not used in this setup for timeline scenes -->
+
+    <script src="script.js"></script> <!-- Updated path -->
+</body>
+</html>
